@@ -59,7 +59,7 @@ export default function App() {
         onViewWorkClick={handleViewServicesClick}
       />
 
-      <Services showOfferings={showOfferings} />
+      {showOfferings && <Services showOfferings={showOfferings} />}
 
     </div>
   );

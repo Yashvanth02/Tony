@@ -188,15 +188,15 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black pointer-events-none" />
 
-      <div className="relative z-10 container mx-auto px-6 text-center max-w-[1200px] flex flex-col items-center justify-center pt-24 pb-10 md:pt-20 md:pb-8">
+      <div className="relative z-10 container mx-auto px-6 text-center max-w-[1200px] flex flex-col items-center justify-center pt-28 pb-6 md:pt-24 md:pb-4">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 mb-4"
+          className="inline-flex items-center gap-2.5 mb-5 rounded-full border border-cinematic-orange/30 bg-cinematic-orange/10 px-4 py-2 shadow-[0_0_25px_rgba(255,77,49,0.12)]"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-cinematic-orange animate-ping" />
-          <span className="font-display text-xs md:text-sm font-semibold text-cinematic-orange tracking-[0.35em] uppercase">
+          <span className="h-2.5 w-2.5 rounded-full bg-cinematic-orange shadow-[0_0_10px_rgba(255,77,49,0.7)]" />
+          <span className="font-display text-[11px] md:text-sm font-semibold text-cinematic-orange tracking-[0.35em] uppercase">
             FOUNDER • CREATIVE DIRECTOR
           </span>
         </motion.div>
@@ -205,7 +205,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
-          className="font-display text-5xl sm:text-7xl md:text-8xl font-extrabold text-white mb-3 tracking-tighter"
+          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.6rem] font-extrabold text-white mb-3 tracking-[-0.04em] leading-none"
         >
           BENN TONY
         </motion.h1>
@@ -228,7 +228,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8 font-sans font-light leading-relaxed tracking-wide"
+          className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-6 font-sans font-light leading-relaxed tracking-wide"
         >
           I create cinematic brand stories, premium content systems, and launch-ready digital experiences for founders and modern businesses.
         </motion.p>

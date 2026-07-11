@@ -28,12 +28,12 @@ export default function Header({ onContactClick, onBookCallClick, activeSection 
     <>
       <nav
         id="navbar"
-        className={`fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-[1200px] rounded-full backdrop-blur-xl border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.5)] bg-white/3 flex justify-between items-center px-6 md:px-8 py-3.5 md:py-4 z-50 transition-all duration-300 ${
-          scrolled ? 'py-3 bg-black/60 border-white/15' : 'py-4'
+        className={`fixed top-3 left-1/2 -translate-x-1/2 w-[92%] max-w-[1080px] rounded-full backdrop-blur-xl border border-white/10 shadow-[0_12px_30px_rgba(0,0,0,0.45)] bg-white/5 flex justify-between items-center px-4 md:px-5 py-2.5 md:py-3 z-50 transition-all duration-300 ${
+          scrolled ? 'bg-black/70 border-white/15' : 'bg-white/5'
         }`}
       >
         {/* Logo */}
-        <a href="#" className="font-display text-xl md:text-2xl font-bold text-white tracking-tighter hover:opacity-90 transition-opacity">
+        <a href="#" className="font-display text-lg md:text-xl font-bold text-white tracking-tighter hover:opacity-90 transition-opacity">
           REELIO
         </a>
 
@@ -48,7 +48,7 @@ export default function Header({ onContactClick, onBookCallClick, activeSection 
               }
             }}
             id="header-cta"
-            className="bg-cinematic-orange text-white text-[11px] md:text-xs px-5 md:px-6 py-2.5 rounded-full font-display font-bold hover:shadow-[0_0_20px_rgba(255,77,49,0.4)] transition-all duration-300 active:scale-95 flex items-center gap-1.5 cursor-pointer"
+            className="bg-cinematic-orange text-white text-[10px] md:text-xs px-4 md:px-5 py-2 rounded-full font-display font-bold hover:shadow-[0_0_16px_rgba(255,77,49,0.35)] transition-all duration-300 active:scale-95 flex items-center gap-1.5 cursor-pointer"
           >
             {isServicesActive ? 'BACK TO TOP' : "LET'S TALK"}
             <ArrowUpRight className="w-3 h-3" />
