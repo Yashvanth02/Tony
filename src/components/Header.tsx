@@ -34,7 +34,7 @@ export default function Header({ onContactClick, onBookCallClick, activeSection 
       >
         {/* Logo */}
         <a href="#" className="flex items-center hover:opacity-90 transition-opacity">
-          <img src="/reeliologoo.PNG" alt="Reelio logo" className="h-8 md:h-9 w-auto" />
+          <img src="/reeliologoo.PNG" alt="Reelio logo" className="h-8 md:h-9 w-auto object-contain" />
         </a>
 
         {/* Action Button & Mobile Toggle */}
