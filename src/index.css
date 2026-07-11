@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Geist", "Inter", sans-serif;
+
+  --color-surface: #1e0f0d;
+  --color-surface-dim: #1e0f0d;
+  --color-surface-bright: #483531;
+  --color-surface-lowest: #190a08;
+  --color-surface-low: #281714;
+  --color-surface-container: #2c1b18;
+  --color-surface-high: #382622;
+  --color-surface-highest: #43302d;
+  --color-on-surface: #fbdcd6;
+  --color-on-surface-variant: #e5beb6;
+  --color-inverse-surface: #fbdcd6;
+  --color-inverse-on-surface: #3f2c28;
+  --color-outline: #ac8982;
+  --color-outline-variant: #5c403b;
+  --color-surface-tint: #ffb4a6;
+  --color-primary: #ffb4a6;
+  --color-on-primary: #660800;
+  --color-primary-container: #ff553a;
+  --color-on-primary-container: #590600;
+  --color-inverse-primary: #bb1a03;
+  --color-secondary: #c6c6c7;
+  --color-on-secondary: #2f3131;
+  --color-secondary-container: #454747;
+  --color-on-secondary-container: #b4b5b5;
+  --color-tertiary: #64d4f8;
+  --color-on-tertiary: #003543;
+  --color-tertiary-container: #0f9dbf;
+  --color-on-tertiary-container: #002e3a;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-primary-fixed: #ffdad3;
+  --color-primary-fixed-dim: #ffb4a6;
+  --color-on-primary-fixed: #3f0300;
+  --color-on-primary-fixed-variant: #900f00;
+  --color-secondary-fixed: #e2e2e2;
+  --color-secondary-fixed-dim: #c6c6c7;
+  --color-on-secondary-fixed: #1a1c1c;
+  --color-on-secondary-fixed-variant: #454747;
+  --color-tertiary-fixed: #b6ebff;
+  --color-tertiary-fixed-dim: #64d4f8;
+  --color-on-tertiary-fixed: #001f28;
+  --color-on-tertiary-fixed-variant: #004e60;
+  --color-background: #1e0f0d;
+  --color-on-background: #fbdcd6;
+  --color-surface-variant: #43302d;
+  --color-cinematic-orange: #FF4D31;
+  --color-deep-coral: #E63946;
+  --color-ink-black: #050505;
+  --color-obsidian: #0A0A0A;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050505;
+  color: #fbdcd6;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c1b18;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4D31;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 77, 49, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
