@@ -197,7 +197,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
         >
           <span className="h-2.5 w-2.5 rounded-full bg-cinematic-orange shadow-[0_0_10px_rgba(255,77,49,0.7)]" />
           <span className="font-display text-[11px] md:text-sm font-semibold text-cinematic-orange tracking-[0.35em] uppercase">
-            FOUNDER • CREATIVE DIRECTOR
+            FOUNDER & CEO
           </span>
         </motion.div>
 
