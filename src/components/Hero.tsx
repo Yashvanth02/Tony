@@ -220,7 +220,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
             REELIO
           </div>
           <div className="rounded-full border border-cinematic-orange/20 bg-cinematic-orange/10 px-4 py-2 text-[10px] md:text-xs font-display font-semibold uppercase tracking-[0.3em] text-cinematic-orange">
-            Creative Studio
+            Digital Marketing &amp; Video Production Agency
           </div>
         </motion.div>
 
