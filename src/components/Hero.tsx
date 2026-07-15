@@ -3,11 +3,10 @@ import { motion } from 'motion/react';
 import { Instagram, Linkedin, Globe, Phone, Mail, MessageSquare, Sparkles } from 'lucide-react';
 
 interface HeroProps {
-  onContactClick: () => void;
   onViewWorkClick: () => void;
 }
 
-export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
+export default function Hero({ onViewWorkClick }: HeroProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [selectedMood, setSelectedMood] = useState<'cinematic' | 'noir' | 'intense'>('cinematic');
 
@@ -207,7 +206,7 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.6rem] font-extrabold text-white mb-3 tracking-[-0.04em] leading-none"
         >
-          BENN TONY
+          BENN TONY S
         </motion.h1>
 
         <motion.div
@@ -216,9 +215,6 @@ export default function Hero({ onContactClick, onViewWorkClick }: HeroProps) {
           transition={{ duration: 0.7, delay: 0.25 }}
           className="flex flex-wrap justify-center items-center gap-3 mb-5"
         >
-          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[10px] md:text-xs font-display font-semibold uppercase tracking-[0.3em] text-white/80">
-            REELIO
-          </div>
           <div className="rounded-full border border-cinematic-orange/20 bg-cinematic-orange/10 px-4 py-2 text-[10px] md:text-xs font-display font-semibold uppercase tracking-[0.3em] text-cinematic-orange">
             Digital Marketing &amp; Video Production Agency
           </div>
