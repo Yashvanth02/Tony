@@ -75,21 +75,16 @@ export default function Header({ onViewServicesClick }: HeaderProps) {
             LET'S TALK
           </a>
 
-          <div className="grid gap-3">
-            {SERVICES.map((service) => (
-              <button
-                key={service.id}
-                type="button"
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onViewServicesClick();
-                }}
-                className="w-full rounded-full border border-white/10 bg-white/5 py-3 px-4 text-left text-sm text-white transition-all hover:border-cinematic-orange/20 hover:bg-white/10"
-              >
-                {service.title}
-              </button>
-            ))}
-          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setMobileMenuOpen(false);
+              onViewServicesClick();
+            }}
+            className="w-full rounded-full border border-white/10 bg-white/5 py-4 text-sm text-white font-bold uppercase tracking-[0.2em] hover:border-cinematic-orange/20 hover:bg-white/10 transition-all"
+          >
+            VIEW SERVICES
+          </button>
         </div>
 
         {/* Absolute top menu close button */}
